@@ -3,7 +3,7 @@ import http from "http";
 import { Server } from "socket.io";
 import { ACTIONS } from "./actions.js";
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const httpServer = http.createServer(app);
 
