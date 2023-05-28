@@ -8,7 +8,7 @@ const port = process.env.PORT || 8000;
 const httpServer = http.createServer(app);
 
 const io = new Server(httpServer, {
-  cors: { origin: "http://127.0.0.1:5173", methods: ["GET", "POST"] },
+  cors: { origin: "*", methods: ["GET", "POST"] },
 });
 
 const socketUserMap = {};
